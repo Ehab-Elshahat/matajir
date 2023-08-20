@@ -1,0 +1,18 @@
+/**
+ * Start Global Roles
+ *
+ * @format
+ */
+
+@font-face {
+  font-family: Dubai-Regular;
+  src: url("../assets/fonts/Dubai-Regular.ttf");
+}
+body {
+  /* Arabic Direction */
+  direction: ltr;
+  font-family: Dubai-Regular, sans-serif;
+  background-color: black;
+  
+}
+/* End Global Roles */
