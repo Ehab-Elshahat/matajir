@@ -1,0 +1,572 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css_rtl/bootstrap.min.css" />
+
+    <!-- style css File RTL-->
+    <link rel="stylesheet" href="../css_rtl/style.css" />
+
+    <!-- style css File Ltr-->
+    <!-- <link rel="stylesheet" href="../css_ltr/style.css" /> -->
+
+    <!-- Title Icon -->
+    <link rel="icon" href="../assets/img/fav-icon.png" />
+
+    <title>إتمام الشراء</title>
+  </head>
+
+  <body>
+    <!-- Start Overlay Mobile -->
+    <div class="overlay"></div>
+    <!-- End Overlay Mobile -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <div class="custom-toggler"></div>
+        <a class="navbar-brand" href="#">
+          <img class="nav-logo" src="../assets/img/logo.svg" alt="nav logo" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="البحث عن المنتجات، والعلامات التجارية"
+              aria-label="Search"
+            />
+            <button class="btn search-btn" type="submit"></button>
+            <div class="search-history">
+              <div class="history-box">
+                <div class="last-search">
+                  <h4>عمليات البحث الاخيرة</h4>
+                  <span class="delete-search"></span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">جالكسي A54</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">أوبو</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Samsung </a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">أيفون</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Pro 13</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Hp pavalion </a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Mobile Cover </a>
+                    <span class="delete"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link lang" href="#">EN</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle my-account-btn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                حسابي
+              </a>
+              <ul class="dropdown-menu dropdown-my-account">
+                <li><a class="dropdown-item" href="#">حسابك</a></li>
+                <li><a class="dropdown-item" href="#">مشترياتك</a></li>
+                <li><a class="dropdown-item" href="#">عناوينك</a></li>
+                <li><a class="dropdown-item" href="#">الارجاع</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item sign-out" href="#">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="#">
+                عربة التسوق
+               <span class="number">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-links">
+          <a class="link home" href="./homepage.html"
+            >الرئــــــــــــــــيسيـة</a
+          >
+          <a class="link discounts" href="#">العــــــــــــــــــــروض</a>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header link categories">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  الفــــــــــــــــــــــــئات
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="list-unstyled sub-category">
+                    <li><a href="#">الهواتــــــف الذكــــــية</a></li>
+                    <li><a href="#">الأجهــــزة اللوحــــــية</a></li>
+                    <li>
+                      <a href="#"
+                        >الكمبيــــــــــــــــــــــــــــــوتــــــر</a
+                      >
+                    </li>
+                    <li><a href="#">الإكسـســــــــــــــــــوارات</a></li>
+                    <li>
+                      <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header link brands">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsetow"
+                  aria-expanded="false"
+                  aria-controls="collapsetow"
+                >
+                  العلامات التجارية
+                </button>
+              </h2>
+              <div
+                id="collapsetow"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="list-unstyled sub-category">
+                    <li><a href="#"> سامسونج</a></li>
+                    <li><a href="#">أبل</a></li>
+                    <li><a href="#">أوبو</a></li>
+                    <li><a href="#">شاومي</a></li>
+                    <li><a href="#">علامة تجارية</a></li>
+                    <li>
+                      <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link new-arrivals-link" href="#">وصل حديــــثاً</a>
+          <a class="link best-sellers-link" href="#">الأكــــثر مبيعاً </a>
+
+          <a class="link your-account-link" href="#"> حسابك </a>
+          <a class="link your-buy-link" href="#"> مشترياتك </a>
+          <a class="link your-address-link" href="#"> عناوينك </a>
+          <a class="link repate-link" href="#"> الإرجــــــاع </a>
+          <a class="link sign-out-link" href="#"> تسجيل الخروج </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Checkout Steps  -->
+    <div class="container">
+      <div class="checkout-main-container">
+        <div class="checkout-steps">
+          <form action="">
+            <h4 class="checkout-title">إتمام الشراء</h4>
+
+            <!-- Address Step -->
+            <h3 class="step-main-title">1 - اختر عنوان شحن</h3>
+            <div class="step-box address">
+              <h3 class="step-sub-title your-address-title">عناوينك</h3>
+              <div class="line"></div>
+
+              <label for="address-1">
+                <input
+                  class="radio-address"
+                  type="radio"
+                  name="address-1"
+                  id="address-1"
+                />
+                <span class="check-mark"></span>
+                <p>
+                  المملكة العربية السعودية، الرياض 11451، شارع الملك فهد، برج
+                  الفيصلية، الطابق 15، مكتب رقم 1501
+                </p>
+              </label>
+              <button class="add-new-address" type="button">
+                أضف عنواناً جديداً
+              </button>
+
+              <!-- Start Add Address Model -->
+              <div class="add-address-model">
+                <h3>اضـــف عنوان</h3>
+                <span class="close"></span>
+                <form action="">
+                  <div class="label-input-box">
+                    <label for="country">البلد/المنطقة:</label>
+                    <input type="text" name="country" id="country" />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="full-name"
+                      >الاسم بالكامل (الاسم الأول واسم العائلة):</label
+                    >
+                    <input type="text" name="full-name" id="full-name" />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="street-name"> اسم الشارع: </label>
+                    <input type="text" name="street-name" id="street-name" />
+                  </div>
+                  <div class="label-input-box">
+                    <label for="building-number"> اسم/رقم المبنى: </label>
+                    <input
+                      type="text"
+                      name="building-number"
+                      id="building-number"
+                    />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="city"> المدينة/المنطقة: </label>
+                    <input type="text" name="city" id="city" />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="large-street"> الحي: </label>
+                    <input type="text" name="large-street" id="large-street" />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="governorate"> المحافظة: </label>
+                    <input type="text" name="governorate" id="governorate" />
+                  </div>
+
+                  <div class="label-input-box">
+                    <label for="flag"> أقرب معلم: </label>
+                    <input type="text" name="flag" id="flag" />
+                  </div>
+
+                  <div class="details-delevery">
+                    <h4>إضافة تعليمات التوصيل <span>(اختياري)</span></h4>
+                    <div class="home-office">
+                      <h4>نوع العنوان:</h4>
+                      <label for="home">
+                        المنزل
+                        <input type="radio" name="home-office" id="home" />
+                        <span class="check-mark"></span>
+                      </label>
+                      <label for="office">
+                        المكتب
+                        <input type="radio" name="home-office" id="office"/>
+                        <span class="check-mark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="add-address-form-btn">اضف عنوان</button>
+                </form>
+              </div>
+              <!-- End Add Address Model -->
+            </div>
+
+            <!-- Bay Method -->
+            <h3 class="step-main-title">2 - اختر طريقة دفع</h3>
+            <div class="step-box address">
+              <h3 class="step-sub-title methods-title">طرق الدفع المتاحة</h3>
+              <div class="line"></div>
+
+              <label for="visa">
+                <input
+                  class="radio-address"
+                  type="radio"
+                  name="address-1"
+                  id="visa"
+                />
+                <span class="check-mark"></span>
+                <p>بطاقة فيزا</p>
+              </label>
+
+              <div class="bay-details">
+                <p class="end-with">Visa تنتهي بــــــــــــ 6398****</p>
+                <button class="add-new-address" type="button">
+                  أضف بطاقة جديدة
+                </button>
+                <!-- Start Add visa Model -->
+                <div class="add-address-model">
+                  <h3 class="add-visa-m-title">اضـــف بطاقة جديدة</h3>
+                  <span class="close"></span>
+                  <form action="">
+                    <div class="label-input-box">
+                      <label for="card-number">رقم البطاقة:</label>
+                      <input type="text" name="card-number" id="card-number" />
+                    </div>
+
+                    <div class="label-input-box">
+                      <label for="card-name"> الإسم المدون على البطاقة: </label>
+                      <input type="text" name="card-name" id="card-name" />
+                    </div>
+
+                    <div class="date-check">
+                      <div class="label-input-box">
+                        <label for="card-date"> تاريخ إنتهاء البطاقة: </label>
+                        <input type="text" name="card-date" id="card-date" />
+                      </div>
+                      <div class="label-input-box">
+                        <label for="card-check"> رقم التحقق الثلاثي : </label>
+                        <input type="text" name="card-check" id="card-check" />
+                      </div>
+                    </div>
+                    <button class="add-address-form-btn">اضف بطاقة</button>
+                  </form>
+                </div>
+                <!-- End Add Visa Model -->
+              </div>
+
+              <label for="cach">
+                <input
+                  class="radio-address"
+                  type="radio"
+                  name="address-1"
+                  id="cach"
+                />
+                <span class="check-mark"></span>
+                <p>الدفع عند الإستلام</p>
+              </label>
+            </div>
+
+            <!-- Offers -->
+            <h3 class="step-main-title active">3 - العروض</h3>
+            <div class="step-box address">
+              <h3 class="step-sub-title offers-title">
+                أضف بطاقة هدايا أو رمز خصم
+              </h3>
+              <div class="line"></div>
+
+              <form action="" class="discount-code">
+                <input
+                  type="text"
+                  name="discount-code "
+                  id=""
+                  placeholder="ادخل رمز الخصم"
+                />
+                <button type="submit">تطبيق</button>
+              </form>
+            </div>
+
+            <!-- Application Review -->
+            <h3 class="step-main-title">4 - مراجعة الطلب</h3>
+            <div class="step-box address">
+              <h3 class="step-sub-title review-title">راجع الطلبية</h3>
+              <div class="line"></div>
+
+              <div class="item">
+                <div class="right">
+                  <div class="right-img">
+                    <img src="../assets/img/added-to-cart-right.png" alt="item" />
+                  </div>
+                  <div class="item-desc">
+                    <p>
+                      هاتف سامسونج جالاكسي A54 - الجيل الخامس 5G - شريحتين اتصال
+                      - اندرويد - ذاكرة RAM 8 جيجابايت - ذاكرة تخزين 256
+                      جيجابايت
+                    </p>
+                    <div class="qty-color">
+                      <p class="color">لون :<span>ابيض </span></p>
+                      <p class="qty">الكمية :<span>1 </span></p>
+                    </div>
+                    <p class="price"><span>1.914.85 </span>ريال</p>
+                  </div>
+                </div>
+                <div class="left">
+                  <button class="remove">إزالة</button>
+                  <div class="qty">
+                    <span class="text">الكمية :</span>
+                    <span class="increase active">+</span>
+                    <span class="qty-value">1</span>
+                    <span class="decrease">-</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="right">
+                  <div class="right-img">
+                    <img src="../assets/img/item-2.png" alt="item" />
+                  </div>
+                  <div class="item-desc">
+                    <p>
+                      واقي منزلق كام شيلد لكاميرا موبايل سامسونج جالاكسي A54
+                    </p>
+                    <div class="qty-color">
+                      <p class="color">لون :<span>ابيض </span></p>
+                      <p class="qty">الكمية :<span>1 </span></p>
+                    </div>
+                    <p class="price"><span>84.95 </span>ريال</p>
+                  </div>
+                </div>
+                <div class="left">
+                  <button class="remove">إزالة</button>
+                  <div class="qty">
+                    <span class="text">الكمية :</span>
+                    <span class="increase active">+</span>
+                    <span class="qty-value">1</span>
+                    <span class="decrease">-</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="delevry-sum">
+                <div class="delevry">
+                  <span>التوصيل</span>
+                  <p class="price"><span>12.00</span>ريال</p>
+                </div>
+                <div class="line"></div>
+                <div class="sum">
+                  <span class="text">إجمالي المبلغ:</span>
+                  <p class="price"><span>20,011.8</span>ريال</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="checkout" type="submit">إتمام الشراء</button>
+          </form>
+        </div>
+
+        <div class="checkout-line-level">
+          <h3 class="level active"> <span class="circle"></span>العنوان</h3>
+          <h3 class="level active"> <span class="circle"></span>طريقة الدفع</h3>
+          <h3 class="level active current"> <span class="circle"></span>العروض</h3>
+          <h3 class="level no-before"> <span class="circle"></span>مراجعة الطلب</h3>
+        </div>
+      </div>
+    </div>
+    <!-- End Checkout Steps  -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="shop-with-us">
+          <h3 class="footer-title">تسوق معنا</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">الهواتف الذكية </a></li>
+            <li><a href="#">الاجهزة اللوحية</a></li>
+            <li><a href="#">الكمبيوتر </a></li>
+            <li><a href="#">الاكسسوارات</a></li>
+          </ul>
+        </div>
+        <div class="your-data">
+          <h3 class="footer-title">بياناتك</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">حسابك</a></li>
+            <li><a href="#">مشترياتك</a></li>
+            <li><a href="#">عناوينك </a></li>
+            <li><a href="#">قوائمك</a></li>
+          </ul>
+        </div>
+
+        <div class="help-you">
+          <h3 class="footer-title">دعنا نساعدك</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">المساعدة</a></li>
+            <li><a href="#">سياسات وأسعار الشحن</a></li>
+            <li><a href="#">طلبات الارجاع والاستبدال </a></li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3 class="footer-title">دعنا نساعدك</h3>
+          <ul class="list-unstyled">
+            <li><a href="tel:03 111 666 144">03 111 666 144</a></li>
+            <li><a href="tel:03 171 777 015">03 171 777 015</a></li>
+            <li><a href="mailto:info@matager.sa">info@matager.sa</a></li>
+          </ul>
+          <div class="social-media">
+            <ul class="list-unstyled">
+              <li><a class="instagram" href="#"></a></li>
+              <li><a class="twitter" href="#"></a></li>
+              <li><a class="facebook" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="logo-footer-box">
+          <a href="./homepage.html" class="footer-logo">
+            <img src="../assets/img/logo.svg" alt="" />
+          </a>
+          <p class="footer-desc">
+            متاجر توفر لك تجربة تسوق مميزة وآمنة. بين مجموعة واسعة من المنتجات
+            الإلكترونية بأسعار تنافسية وجودة عالية.
+          </p>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <p>جميع الحقوق محفوظة لدى</p>
+        <img class="rights-logo" src="../assets/img/logo.svg" alt="" />
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Best Seller Slider -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../js/bestSellerSlider.js"></script>
+    <!--Bootstrap  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- javascript file -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
