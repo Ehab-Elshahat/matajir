@@ -472,7 +472,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .nav-link.cart::after {
+  .nav-link.cart .number {
     right: -15px;
   }
 }

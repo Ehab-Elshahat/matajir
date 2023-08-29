@@ -478,7 +478,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .nav-link.cart::after {
+  .nav-link.cart .number {
     left: -15px;
   }
 }
