@@ -31,15 +31,52 @@ let overLay = document.querySelector(".overlay");
 mobilTogglerMenu.addEventListener("click", (e) => {
   e.target.classList.toggle("close");
   if (mobilTogglerMenu.classList.contains("close")) {
-    console.log("close");
     overLay.classList.add("show");
     mobileMenu.classList.add("open");
   } else {
-    console.log("open");
     overLay.classList.remove("show");
     mobileMenu.classList.remove("open");
   }
 });
+
+// Hide All Category Links when mouse leaves 
+let allCategoryBtn = document.querySelector(".all-categories .dropdown-toggle");
+
+let allDropdown = document.querySelectorAll(".category li .dropdown-menu");
+let categoryLinks = document.querySelector(
+  ".categories-box .all-categories .dropdown-menu"
+);
+if (categoryLinks) {
+  categoryLinks.addEventListener("mouseleave", () => {
+    categoryLinks.classList.remove("show");
+    allCategoryBtn.classList.remove("show");
+  });
+}
+window.addEventListener("scroll", () => {
+  categoryLinks.classList.remove("show");
+  allCategoryBtn.classList.remove("show");
+  allDropdown.forEach((menu, index) => {
+    menu.classList.remove("show");
+  });
+})
+
+if (allDropdown) {
+  allDropdown.forEach((menu, index) => {
+    menu.addEventListener("mouseleave", () => {
+      menu.classList.remove("show");
+    });
+  })
+}
+// Handle Active Class On Links
+let allCategoryLinks = document.querySelectorAll(
+  ".category li .dropdown-toggle "
+);
+allCategoryLinks.forEach(link =>{
+  link.addEventListener("click", () =>{
+    allCategoryLinks.forEach(el=> el.classList.remove("active"))
+    link.classList.add("active");
+  })
+})
 
 // Product page
 // Change Product Photo
@@ -77,7 +114,7 @@ let increaseBtns = document.querySelectorAll(".increase");
 let decreaseBtns = document.querySelectorAll(".decrease");
 let qtyValue = document.querySelectorAll(".qty-value");
 if (increaseBtns) {
-  increaseBtns.forEach((btn, index)=> {
+  increaseBtns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       qtyValue[index].textContent++;
       if (qtyValue[index].textContent > 1) {
@@ -87,10 +124,10 @@ if (increaseBtns) {
       }
     });
   })
-  
+
 }
-if(decreaseBtns) {
-  decreaseBtns.forEach((btn, index)=> {
+if (decreaseBtns) {
+  decreaseBtns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       if (qtyValue[index].textContent > 1) {
         qtyValue[index].textContent--;
@@ -103,7 +140,7 @@ if(decreaseBtns) {
       }
     });
   })
-  
+
 }
 // ShoppingCart Page 
 let itemsPrice = document.querySelectorAll(".cart-summary .price span");
@@ -119,37 +156,40 @@ if (itemsPrice) {
 let addNewAddressBtn = document.querySelectorAll(".add-new-address");
 let addNewAddressModel = document.querySelectorAll(".add-address-model");
 let closeModel = document.querySelectorAll(".add-address-model .close");
-if(addNewAddressBtn) {
+if (addNewAddressBtn) {
   addNewAddressBtn.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       addNewAddressModel[index].classList.add("show");
+      overLay.classList.add("show");
     });
   })
-  
+
 }
-if(closeModel) {
+if (closeModel) {
   closeModel.forEach((btn, index) => {
-     btn.addEventListener("click", () => {
-       addNewAddressModel[index].classList.remove("show");
-     });
+    btn.addEventListener("click", () => {
+      addNewAddressModel[index].classList.remove("show");
+      overLay.classList.remove("show");
+    });
   })
- 
+
 }
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-       addNewAddressModel.forEach(model =>{
-        model.classList.remove("show");
-       })
+    addNewAddressModel.forEach(model => {
+      model.classList.remove("show");
+      overLay.classList.remove("show");
+    })
   }
 });
 
 // Filter Page
 let filterBtns = document.querySelectorAll(".btns .filter-btn");
-if(filterBtns) {
+if (filterBtns) {
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       btn.classList.toggle("active");
-        
+
     })
   })
 }

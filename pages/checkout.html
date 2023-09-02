@@ -387,7 +387,7 @@
 
             <!-- Offers -->
             <h3 class="step-main-title active">3 - العروض</h3>
-            <div class="step-box address">
+            <div class="step-box ">
               <h3 class="step-sub-title offers-title">
                 أضف بطاقة هدايا أو رمز خصم
               </h3>
@@ -402,6 +402,16 @@
                 />
                 <button type="submit">تطبيق</button>
               </form>
+
+              <!-- Add Class Active To what message You Want Show  -->
+              <p class="coupon-status acceptable active">
+                  <span class="text">الكود صحيح</span>
+                <span class="status-icon"></span>
+              </p>
+              <p class="coupon-status unacceptable active">
+                  <span class="text">الكود غير صحيح</span>
+                <span class="status-icon"></span>
+              </p>
             </div>
 
             <!-- Application Review -->
@@ -470,6 +480,11 @@
                 <div class="delevry">
                   <span>التوصيل</span>
                   <p class="price"><span>12.00</span>ريال</p>
+                </div>
+                <div class="line"></div>
+                <div class="delevry">
+                  <span>الخصم</span>
+                  <p class="price"><span>00.00</span>ريال</p>
                 </div>
                 <div class="line"></div>
                 <div class="sum">
@@ -552,7 +567,7 @@
       </div>
       <div class="footer-rights">
         <p>جميع الحقوق محفوظة لدى</p>
-        <img class="rights-logo" src="../assets/img/logo.svg" alt="" />
+        <a href=""><img class="rights-logo" src="../assets/img/logo.svg" alt="" /></a>
       </div>
     </footer>
     <!-- End Footer -->

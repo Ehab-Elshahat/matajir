@@ -2,11 +2,13 @@
 
 $(".main-carousel").flickity({
   // options
-  cellAlign: "left",
+  cellAlign: "center",
+  fade: true,
   wrapAround: true,
   freeScroll: true,
-  autoPlay: true, // advance cells every 3 seconds
-  autoPlay: 1500, // {Number}
-  // advance cells ever {Number} milliseconds
-  // 1500 will advance cells every 1.5 seconds
+  contain: true,
+  autoPlay: true,
+  autoPlay: 3000,
+  selectedAttraction: 0.3,
+  friction: 0.8,
 });
