@@ -52,8 +52,6 @@ window.addEventListener("keydown", (e) => {
 
 // Close Menu When Clicking Outside it
 window.addEventListener("click", (e) => {
-  // e.preventDefault()
-  console.log(e.target.classList);
   if (
     !e.target.classList.contains("custom-toggler") &&
     !e.target.classList.contains("accordion-button") &&
@@ -157,7 +155,8 @@ if (addNewAddressBtn) {
   addNewAddressBtn.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       addNewAddressModel[index].classList.add("show");
-      overLay.classList.add("show");
+      overLay.classList.add("open");
+      
     });
   });
 }
@@ -165,7 +164,7 @@ if (closeModel) {
   closeModel.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       addNewAddressModel[index].classList.remove("show");
-      overLay.classList.remove("show");
+      overLay.classList.remove("open");
     });
   });
 }
