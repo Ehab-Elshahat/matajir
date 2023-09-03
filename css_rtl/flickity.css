@@ -35,7 +35,7 @@
 }
 .flickity-button {
   position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: #ffffffbf;
   border: none;
   color: #333;
 }
@@ -99,6 +99,11 @@
   width: 50%;
   height: 60%;
   color: #6A3C7E;
+}
+@media(max-width:991px) {
+  .flickity-prev-next-button .flickity-button-icon {
+    display: none;
+  }
 }
 .flickity-page-dots {
   position: absolute;
