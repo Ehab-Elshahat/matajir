@@ -2,198 +2,248 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Best Seller Slider -->
+    <link rel="stylesheet" href="../css_rtl/flickity.css" />
 
-  <!-- Best Seller Slider -->
-  <link rel="stylesheet" href="../css_rtl/flickity.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css_rtl/bootstrap.min.css" />
 
+    <!-- style css File RTL-->
+    <link rel="stylesheet" href="../css_rtl/style.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="../css_rtl/bootstrap.min.css" />
+    <!-- style css File Ltr-->
+    <!-- <link rel="stylesheet" href="../css_ltr/style.css" /> -->
 
-  <!-- style css File RTL-->
-  <link rel="stylesheet" href="../css_rtl/style.css" />
+    <!-- Title Icon -->
+    <link rel="icon" href="../assets/img/fav-icon.png" />
 
-  <!-- style css File Ltr-->
-  <!-- <link rel="stylesheet" href="../css_ltr/style.css" /> -->
+    <title>الرئيسية</title>
+  </head>
 
-  <!-- Title Icon -->
-  <link rel="icon" href="../assets/img/fav-icon.png" />
+  <body>
+    <!-- Start Overlay Mobile -->
+    <div class="overlay"></div>
+    <!-- End Overlay Mobile -->
 
-  <title>الرئيسية</title>
-</head>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="custom-toggler"></div>
+        <a class="navbar-brand" href="#">
+          <img class="nav-logo" src="../assets/img/logo.svg" alt="nav logo" />
+        </a>
 
-<body>
-  <!-- Start Overlay Mobile -->
-  <div class="overlay"></div>
-  <!-- End Overlay Mobile -->
-
-  <!-- Start Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <div class="custom-toggler"></div>
-      <a class="navbar-brand" href="#">
-        <img class="nav-logo" src="../assets/img/logo.svg" alt="nav logo" />
-      </a>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="البحث عن المنتجات، والعلامات التجارية"
-            aria-label="Search" />
-          <button class="btn search-btn" type="submit"></button>
-          <div class="search-history">
-            <div class="history-box">
-              <div class="last-search">
-                <h4>عمليات البحث الاخيرة</h4>
-                <span class="delete-search"></span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="البحث عن المنتجات، والعلامات التجارية"
+              aria-label="Search"
+            />
+            <button class="btn search-btn" type="submit"></button>
+            <div class="search-history">
+              <div class="history-box">
+                <div class="last-search">
+                  <h4>عمليات البحث الاخيرة</h4>
+                  <span class="delete-search"></span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">جالكسي A54</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">أوبو</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Samsung </a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">أيفون</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Pro 13</a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Hp pavalion </a>
+                    <span class="delete"></span>
+                  </li>
+                  <li>
+                    <a href="#">Mobile Cover </a>
+                    <span class="delete"></span>
+                  </li>
+                </ul>
               </div>
-              <ul class="list-unstyled">
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link lang" href="#">EN</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle my-account-btn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                حسابي
+              </a>
+              <ul class="dropdown-menu dropdown-my-account">
                 <li>
-                  <a href="#">جالكسي A54</a>
-                  <span class="delete"></span>
+                  <a class="dropdown-item" href="./your-account.html">حسابك</a>
                 </li>
                 <li>
-                  <a href="#">أوبو</a>
-                  <span class="delete"></span>
+                  <a class="dropdown-item" href="./purchases.html">مشترياتك</a>
                 </li>
                 <li>
-                  <a href="#">Samsung </a>
-                  <span class="delete"></span>
+                  <a class="dropdown-item" href="./your-addresses.html"
+                    >عناوينك</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">الارجاع</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a href="#">أيفون</a>
-                  <span class="delete"></span>
-                </li>
-                <li>
-                  <a href="#">Pro 13</a>
-                  <span class="delete"></span>
-                </li>
-                <li>
-                  <a href="#">Hp pavalion </a>
-                  <span class="delete"></span>
-                </li>
-                <li>
-                  <a href="#">Mobile Cover </a>
-                  <span class="delete"></span>
+                  <a class="dropdown-item sign-out" href="#">تسجيل الخروج</a>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="./shopping-cart.html">
+                عربة التسوق
+                <span class="number">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-links">
+          <a class="link home" href="./homepage.html"
+            >الرئــــــــــــــــيسيـة</a
+          >
+          <a class="link discounts" href="#">العــــــــــــــــــــروض</a>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header link categories">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  الفــــــــــــــــــــــــئات
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="list-unstyled sub-category">
+                    <li><a href="#">الهواتــــــف الذكــــــية</a></li>
+                    <li><a href="#">الأجهــــزة اللوحــــــية</a></li>
+                    <li>
+                      <a href="#"
+                        >الكمبيــــــــــــــــــــــــــــــوتــــــر</a
+                      >
+                    </li>
+                    <li><a href="#">الإكسـســــــــــــــــــوارات</a></li>
+                    <li>
+                      <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link lang" href="#">EN</a>
-          </li>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header link brands">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsetow"
+                  aria-expanded="false"
+                  aria-controls="collapsetow"
+                >
+                  العلامات التجارية
+                </button>
+              </h2>
+              <div
+                id="collapsetow"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="list-unstyled sub-category">
+                    <li><a href="#"> سامسونج</a></li>
+                    <li><a href="#">أبل</a></li>
+                    <li><a href="#">أوبو</a></li>
+                    <li><a href="#">شاومي</a></li>
+                    <li><a href="#">علامة تجارية</a></li>
+                    <li>
+                      <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link new-arrivals-link" href="#">وصل حديــــثاً</a>
+          <a class="link best-sellers-link" href="#">الأكــــثر مبيعاً </a>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle my-account-btn" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              حسابي
-            </a>
-            <ul class="dropdown-menu dropdown-my-account">
-              <li><a class="dropdown-item" href="#">حسابك</a></li>
-              <li><a class="dropdown-item" href="#">مشترياتك</a></li>
-              <li><a class="dropdown-item" href="#">عناوينك</a></li>
-              <li><a class="dropdown-item" href="#">الارجاع</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item sign-out" href="#">تسجيل الخروج</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cart" href="./shopping-cart.html">
-              عربة التسوق
-              <span class="number">3</span>
-            </a>
-          </li>
-        </ul>
+          <a class="link your-account-link" href="./your-account.html">
+            حسابك
+          </a>
+          <a class="link your-buy-link" href="./purchases.html"> مشترياتك </a>
+          <a class="link your-address-link" href="./your-addresses.html">
+            عناوينك
+          </a>
+          <a class="link repate-link" href="#"> الإرجــــــاع </a>
+          <a class="link sign-out-link" href="#"> تسجيل الخروج </a>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="mobile-menu">
+    <!-- End Navbar -->
+
+    <!-- Start Search Mobile -->
     <div class="container">
-      <div class="mobile-links">
-        <a class="link home" href="./homepage.html">الرئــــــــــــــــيسيـة</a>
-        <a class="link discounts" href="#">العــــــــــــــــــــروض</a>
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header link categories">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                الفــــــــــــــــــــــــئات
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul class="list-unstyled sub-category">
-                  <li><a href="#">الهواتــــــف الذكــــــية</a></li>
-                  <li><a href="#">الأجهــــزة اللوحــــــية</a></li>
-                  <li>
-                    <a href="#">الكمبيــــــــــــــــــــــــــــــوتــــــر</a>
-                  </li>
-                  <li><a href="#">الإكسـســــــــــــــــــوارات</a></li>
-                  <li>
-                    <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header link brands">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsetow" aria-expanded="false" aria-controls="collapsetow">
-                العلامات التجارية
-              </button>
-            </h2>
-            <div id="collapsetow" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul class="list-unstyled sub-category">
-                  <li><a href="#"> سامسونج</a></li>
-                  <li><a href="#">أبل</a></li>
-                  <li><a href="#">أوبو</a></li>
-                  <li><a href="#">شاومي</a></li>
-                  <li><a href="#">علامة تجارية</a></li>
-                  <li>
-                    <a href="#" class="see-all">مشاهـــدة الكــــــــــــل</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="link new-arrivals-link" href="#">وصل حديــــثاً</a>
-        <a class="link best-sellers-link" href="#">الأكــــثر مبيعاً </a>
-
-        <a class="link your-account-link" href="#"> حسابك </a>
-        <a class="link your-buy-link" href="#"> مشترياتك </a>
-        <a class="link your-address-link" href="#"> عناوينك </a>
-        <a class="link repate-link" href="#"> الإرجــــــاع </a>
-        <a class="link sign-out-link" href="#"> تسجيل الخروج </a>
-      </div>
-    </div>
-  </div>
-  <!-- End Navbar -->
-
-  <!-- Start Search Mobile -->
-  <div class="container">
-    <form class="search-mobile" role="search">
-      <input class="form-control" type="search" placeholder="البحث عن المنتجات، والعلامات التجارية"
-        aria-label="Search" />
-      <button class="btn search-btn" type="submit"></button>
-      <!-- <div class="search-history">
+      <form class="search-mobile" role="search">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="البحث عن المنتجات، والعلامات التجارية"
+          aria-label="Search"
+        />
+        <button class="btn search-btn" type="submit"></button>
+        <!-- <div class="search-history">
               <div class="history-box">
                 <div class="last-search">
                   <h4>عمليات البحث الاخيرة</h4>
@@ -231,580 +281,725 @@
                 </ul>
               </div>
             </div> -->
-    </form>
-  </div>
-  <!-- End Search Mobile -->
+      </form>
+    </div>
+    <!-- End Search Mobile -->
 
-  <!-- Start Categories -->
-  <div class="categories-box">
-    <div class="container">
-      <div class="dropdown all-categories">
-        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          كل الفئات
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">الهواتف الذكية</a></li>
-          <li><a class="dropdown-item" href="#">الأجهزة اللوحية</a></li>
-          <li><a class="dropdown-item" href="#"> الكمبيوتر</a></li>
-          <li><a class="dropdown-item" href="#"> الساعات</a></li>
-          <li><a class="dropdown-item" href="#"> السماعات</a></li>
-          <li><a class="dropdown-item" href="#"> جرافيك تابلت</a></li>
-          <li><a class="dropdown-item" href="#"> الشواحن</a></li>
-          <li><a class="dropdown-item" href="#"> أغطية الحماية </a></li>
-          <li><a class="dropdown-item" href="#"> كروت الذاكرة </a></li>
-          <li><a class="dropdown-item" href="#"> هاردات تخزين خارجية </a></li>
-          <li>
-            <a class="dropdown-item" href="#"> أجهزة الانترنت والرواتر </a>
-          </li>
-          <li><a class="dropdown-item" href="#"> ماوس وكيبورد </a></li>
-          <li><a class="dropdown-item" href="#"> حوامل الجوال </a></li>
-          <li><a class="dropdown-item" href="#"> الكابلات </a></li>
-        </ul>
-      </div>
-      <ul class="list-unstyled category">
-        <li class="dropdown">
-          <a class=" dropdown-toggle "  data-bs-toggle="dropdown" aria-expanded="false">الهواتف الذكية</a>
+    <!-- Start Categories -->
+    <div class="categories-box">
+      <div class="container">
+        <div class="dropdown all-categories">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            كل الفئات
+          </button>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">سامسونج </a></li>
-          <li><a class="dropdown-item" href="#">أيفون</a></li>
-          <li><a class="dropdown-item" href="#">هواوي</a></li>
-          <li><a class="dropdown-item" href="#">نوكيا</a></li>
-          <li><a class="dropdown-item" href="#">أوبو</a></li>
-          <li><a class="dropdown-item" href="#">أنفبنكس</a></li>
-        </ul>
-        </li>
-        <li>
-          <a class=" dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الاجهزة اللوحية</a>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">الاجهزة اللوحية 1 </a></li>
-          <li><a class="dropdown-item" href="#">الاجهزة اللوحية 2 </a></li>
-          <li><a class="dropdown-item" href="#">الاجهزة اللوحية 3 </a></li>
-        </ul>
-        </li>
-        <li>
-          <a class=" dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"> الكومبيوتر</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">  ديسك توب </a></li>
-            <li><a class="dropdown-item" href="#">  لاب توب  </a></li>
-          <li><a class="dropdown-item" href="#">  اتش بي </a></li>
-          <li><a class="dropdown-item" href="#">  ديل  </a></li>
-          <li><a class="dropdown-item" href="#">  لينوفو  </a></li>
-        </ul>
-        </li>
-        <li>
-          <a class=" dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الإكسسوارات</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">  اكسسوارات موبايل</a></li>
-            <li><a class="dropdown-item" href="#">  اكسسوارات كمبيوتر</a></li>
-            <li><a class="dropdown-item" href="#">  اكسسوارات لاب توب</a></li>
-        </ul>
-        </li>
-        <li>
-          <a href="#" class="discounts">العروض</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- End Categories -->
-
-  <!-- Start Slider -->
-  <div id="home-slider" class="carousel slide">
-    <div class="carousel-inner">
-      <a href="#" class="carousel-item active">
-        <h2 class="dont-miss">عروض لا تفوتكم!</h2>
-        <p class="discount-value">
-          <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
-          <span class="sa">سعودي</span><strong>علي</strong>
-          <strong>الهواتف الذكية</strong>
-        </p>
-        <div class="free-delevry">
-          <p>توصيل مجاني عند أول شراء</p>
-          <p>*تطبق الشروط والأحكام</p>
-        </div>
-        <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
-      </a>
-      <a href="#" class="carousel-item">
-        <h2 class="dont-miss">عروض لا تفوتكم!</h2>
-        <p class="discount-value">
-          <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
-          <span class="sa">سعودي</span><strong>علي</strong>
-          <strong>الهواتف الذكية</strong>
-        </p>
-        <div class="free-delevry">
-          <p>توصيل مجاني عند أول شراء</p>
-          <p>*تطبق الشروط والأحكام</p>
-        </div>
-        <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
-      </a>
-      <a href="#" class="carousel-item">
-        <h2 class="dont-miss">عروض لا تفوتكم!</h2>
-        <p class="discount-value">
-          <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
-          <span class="sa">سعودي</span><strong>علي</strong>
-          <strong>الهواتف الذكية</strong>
-        </p>
-        <div class="free-delevry">
-          <p>توصيل مجاني عند أول شراء</p>
-          <p>*تطبق الشروط والأحكام</p>
-        </div>
-        <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
-      </a>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#home-slider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#home-slider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- End Slider -->
-
-  <!-- Start Shop by Category -->
-  <section class="shop-by">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="title">تسوق حسب الفئة</h3>
-        <a href="#" class="see-all">مشاهدة الكل</a>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 col-sm-12">
-          <a href="#" class="shop-by-box">
-            <div class="shop-by-img-box">
-              <img class="shop-img" src="../assets/img/shop-by-cat-1.png" alt="smartphone" />
-            </div>
-            <h3 class="category-title">الهواتف الذكية</h3>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-12">
-          <a href="#" class="shop-by-box">
-            <div class="shop-by-img-box">
-              <img class="shop-img" src="../assets/img/shop-by-cat-2.png" alt="tablet" />
-            </div>
-            <h3 class="category-title">الأجهزة اللوحية</h3>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-12">
-          <a href="#" class="shop-by-box">
-            <div class="shop-by-img-box">
-              <img class="shop-img" src="../assets/img/shop-by-cat-3.png" alt="computer" />
-            </div>
-            <h3 class="category-title">الكمبيوتر</h3>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-12">
-          <a href="#" class="shop-by-box">
-            <div class="shop-by-img-box">
-              <img class="shop-img" src="../assets/img/shop-by-cat-4.png" alt="Accessories" />
-            </div>
-            <h3 class="category-title">الإكسسوارات</h3>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Shop by Category -->
-
-  <!-- Start Shop by Brand -->
-  <section class="shop-by">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="title">تسوق حسب العلامة التجارية</h3>
-        <a href="/pages/trademarks.html" class="see-all">مشاهدة الكل</a>
-      </div>
-      <div class="row custom">
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/apple-brand.png" alt="Apple" class="brand-img apple" />
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/samsung-brand.png" alt="samsung" class="brand-img" />
-          </a>
-        </div>
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/nokia-brand.png" alt="Nokia" class="brand-img" />
-          </a>
-        </div>
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/oppo-brand.png" alt="Oppo" class="brand-img" />
-          </a>
-        </div>
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/huawei-brand.png" alt="huawei" class="brand-img" />
-          </a>
-        </div>
-        <div class="col">
-          <a href="#" class="brand-box">
-            <img src="../assets/img/honer-brand.png" alt="Honer" class="brand-img" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Shop by Brand -->
-
-  <!--Start Exclusive Offer -->
-  <div class="container">
-    <section class="exclusive-offer">
-      <div class="save">
-        <div class="save-shape">
-          <p>Save 20%</p>
-        </div>
-        <div class="save-desc">
-          <h3 class="right-offer">الحق العرض</h3>
-          <h4 class="offer-date">العرض ساري حتى 17 مارس</h4>
-          <p class="terms">*تطبق الشروط والأحكام</p>
-        </div>
-      </div>
-      <div class="offer-center">
-        <img class="product-offer" src="../assets/img/mail-watch.png" alt="product-offer" />
-      </div>
-      <div class="offer-left">
-        <div class="product-desc">
-          <p class="desc-offer">ساعة حريمي ديجيتال</p>
-          <span class="new-price">605,28</span>
-          <span class="instead-of"> بدلا من </span>
-          <span class="old-price">805,000</span>
-        </div>
-        <a href="#" class="get-offer">احصل على العرض</a>
-        <p class="terms-mobile">*تطبق الشروط والأحكام</p>
-      </div>
-    </section>
-  </div>
-  <!--End Exclusive Offer -->
-
-  <!-- Start New Arrivals -->
-  <div class="container">
-    <div class="new-arrivals">
-      <div class="section-top">
-        <h3 class="title">وصل حديثًا</h3>
-        <a href="#" class="see-all">مشاهدة الكل</a>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="na-box">
-            <div class="na-box-img">
-              <img class="na-img" src="../assets/img/new-arrivals-1.png" alt="New Arrivals" />
-            </div>
-            <div class="na-desc-box">
-              <a href="#" class="na-desc">
-                هاتف سامسونج جالاكسي A54 شبكة الجيل الخامس 5G بشريحتين اتصال
-                وبنظام اندرويد وذاكرة RAM 8 جيجابايت وذاكرة تخزين 256 جيجابايت
-              </a>
-              <div class="na-price-rating">
-                <span class="price">1.914.85 ريال</span>
-                <form class="rating">
-                  <label>
-                    <input type="radio" name="stars" value="1" />
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="2" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="3" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="4" checked />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="5" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="na-box">
-            <div class="na-box-img">
-              <img class="na-img" src="../assets/img/new-arrivals-2.png" alt="New Arrivals" />
-            </div>
-            <div class="na-desc-box">
-              <a href="" class="na-desc">
-                موبايل ابل ايفون 14 برو ماكس الجديد، 256 جيجابايت، ارجواني
-                غامق
-              </a>
-              <div class="na-price-rating">
-                <span class="price">6.602.45 ريال </span>
-                <form class="rating">
-                  <label>
-                    <input type="radio" name="stars" value="1" />
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="2" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="3" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="4" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="5" checked />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="na-box">
-            <div class="na-box-img">
-              <img class="na-img" src="../assets/img/new-arrivals-3.png" alt="New Arrivals" />
-            </div>
-            <div class="na-desc-box">
-              <a href="" class="na-desc">
-                ايباد ابل الجديد 2021 10.2 بوصة، واي فاي، 64 جيجابايت - فضي
-                (الجيل التاسع)
-              </a>
-              <div class="na-price-rating">
-                <span class="price">1.925.00 ريال </span>
-                <form class="rating">
-                  <label>
-                    <input type="radio" name="stars" value="1" />
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="2" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="3" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="4" checked />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="5" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="na-box">
-            <div class="na-box-img">
-              <img class="na-img laptop" src="../assets/img/new-arrivals-4.png" alt="New Arrivals" />
-            </div>
-            <div class="na-desc-box">
-              <a href="" class="na-desc">
-                لاب توب ديل فوسترو 3510-انتل كورi5-1135G7 جيل 11، ذاكرة RAM 16
-                جيجا، هارد HDD 1 تيرا+هارد SSD 256 جيجا.
-              </a>
-              <div class="na-price-rating">
-                <span class="price">2.809.00 ريال</span>
-                <form class="rating">
-                  <label>
-                    <input type="radio" name="stars" value="1" />
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="2" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="3" checked />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="4" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="5" />
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                    <span class="fa fa-star icon"></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End New Arrivals -->
-
-  <!-- Start Best Sellers -->
-  <div class="container">
-    <div class="best-sellers">
-      <div class="section-top">
-        <h3 class="title">الأكثر مبيعًا</h3>
-        <a href="#" class="see-all">مشاهدة الكل</a>
-      </div>
-      <div class="main-carousel">
-      <div class="item">
-        <a href="">
-          <div class="item-img-box">
-          <img src="../assets/img/best-seller-3.png" alt="best seller item">
-        </div>
-        <p class="item-desc"> ايفون 13 بسعة تخزين 128 جيجابايت، ستارلايت
-        </p>
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <div class="item-img-box">
-          <img src="../assets/img/best-seller-2.png" alt="best seller item">
-        </div>
-        <p  class="item-desc">تابلت اطفال ام تتش ام وان (7 إنش , 8 جيجا بايت)
-       </p>
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <div class="item-img-box">
-          <img src="../assets/img/best-seller-1.png" alt="best seller item">
-        </div>
-        <p class="item-desc">لاب توب مايكروسوفت سيرفس جو 12.4 بوصة
-        </p>
-        </a>
-      </div>
-      
-      
-
-    </div>
-    </div>
-  </div>
-  <!-- End Best Sellers -->
-
-  <!-- Start Footer -->
-  <footer>
-    <div class="container">
-      <div class="shop-with-us">
-        <h3 class="footer-title">تسوق معنا</h3>
-        <ul class="list-unstyled">
-          <li><a href="#">الهواتف الذكية </a></li>
-          <li><a href="#">الاجهزة اللوحية</a></li>
-          <li><a href="#">الكمبيوتر </a></li>
-          <li><a href="#">الاكسسوارات</a></li>
-        </ul>
-      </div>
-      <div class="your-data">
-        <h3 class="footer-title">بياناتك</h3>
-        <ul class="list-unstyled">
-          <li><a href="#">حسابك</a></li>
-          <li><a href="#">مشترياتك</a></li>
-          <li><a href="#">عناوينك </a></li>
-          <li><a href="#">قوائمك</a></li>
-        </ul>
-      </div>
-    
-      <div class="help-you">
-        <h3 class="footer-title">دعنا نساعدك</h3>
-        <ul class="list-unstyled">
-          <li><a href="#">المساعدة</a></li>
-          <li><a href="#">سياسات وأسعار الشحن</a></li>
-          <li><a href="#">طلبات الارجاع والاستبدال </a></li>
-        </ul>
-      </div>
-
-      <div class="contact-us">
-        <h3 class="footer-title">دعنا نساعدك</h3>
-        <ul class="list-unstyled">
-          <li><a href="tel:03 111 666 144">03 111 666 144</a></li>
-          <li><a href="tel:03 171 777 015">03 171 777 015</a></li>
-          <li><a href="mailto:info@matager.sa">info@matager.sa</a></li>
-        </ul>
-        <div class="social-media">
-          <ul class="list-unstyled">
-            <li><a class="instagram" href="#"></a></li>
-            <li><a class="twitter" href="#"></a></li>
-            <li><a class="facebook" href="#"></a></li>
+            <li><a class="dropdown-item" href="#">الهواتف الذكية</a></li>
+            <li><a class="dropdown-item" href="#">الأجهزة اللوحية</a></li>
+            <li><a class="dropdown-item" href="#"> الكمبيوتر</a></li>
+            <li><a class="dropdown-item" href="#"> الساعات</a></li>
+            <li><a class="dropdown-item" href="#"> السماعات</a></li>
+            <li><a class="dropdown-item" href="#"> جرافيك تابلت</a></li>
+            <li><a class="dropdown-item" href="#"> الشواحن</a></li>
+            <li><a class="dropdown-item" href="#"> أغطية الحماية </a></li>
+            <li><a class="dropdown-item" href="#"> كروت الذاكرة </a></li>
+            <li><a class="dropdown-item" href="#"> هاردات تخزين خارجية </a></li>
+            <li>
+              <a class="dropdown-item" href="#"> أجهزة الانترنت والرواتر </a>
+            </li>
+            <li><a class="dropdown-item" href="#"> ماوس وكيبورد </a></li>
+            <li><a class="dropdown-item" href="#"> حوامل الجوال </a></li>
+            <li><a class="dropdown-item" href="#"> الكابلات </a></li>
           </ul>
         </div>
-      </div>
+        <ul class="list-unstyled category">
+          <li>
+            <button
+              class="btn dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الهواتف الذكية
+            </button>
+            <ul class="dropdown-menu custom-position">
+              <li>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      role="button"
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                    سامسونج
+                    <span class="icon"></span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#">سامسونج</a>
+                        </li>
+                        <li>
+                          <a href="#">سامسونج</a>
+                        </li>
+                        <li>
+                          <a href="#">سامسونج</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-      <div class="logo-footer-box">
-       <a href="./homepage.html" class="footer-logo">
+              <li><a class="dropdown-item" href="#">أيفون</a></li>
+              <li><a class="dropdown-item" href="#">هواوي</a></li>
+              <li><a class="dropdown-item" href="#">نوكيا</a></li>
+              <li><a class="dropdown-item" href="#">أوبو</a></li>
+              <li><a class="dropdown-item" href="#">أنفبنكس</a></li>
+            </ul>
+          </li>
+          <li>
+            <button
+              class="btn dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الاجهزة اللوحية
+            </button>
+            <ul class="dropdown-menu custom-position">
+              <li><a class="dropdown-item" href="#">الاجهزة اللوحية 1 </a></li>
+              <li><a class="dropdown-item" href="#">الاجهزة اللوحية 2 </a></li>
+              <li><a class="dropdown-item" href="#">الاجهزة اللوحية 3 </a></li>
+            </ul>
+          </li>
+          <li>
+            <button
+              class="btn dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الكومبيوتر
+            </button>
+            <ul class="dropdown-menu custom-position">
+              <li><a class="dropdown-item" href="#"> ديسك توب </a></li>
+              <li><a class="dropdown-item" href="#"> لاب توب </a></li>
+              <li><a class="dropdown-item" href="#"> اتش بي </a></li>
+              <li><a class="dropdown-item" href="#"> ديل </a></li>
+              <li><a class="dropdown-item" href="#"> لينوفو </a></li>
+            </ul>
+          </li>
+          <li>
+            <button
+              class="btn dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الإكسسوارات
+            </button>
+            <ul class="dropdown-menu custom-position">
+              <li><a class="dropdown-item" href="#"> اكسسوارات موبايل</a></li>
+              <li><a class="dropdown-item" href="#"> اكسسوارات كمبيوتر</a></li>
+              <li><a class="dropdown-item" href="#"> اكسسوارات لاب توب</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./offers.html" class="discounts">العروض</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Categories -->
+
+    <!-- Start Slider -->
+    <div id="home-slider" class="carousel slide">
+      <div class="carousel-inner">
+        <a href="#" class="carousel-item active">
+          <h2 class="dont-miss">عروض لا تفوتكم!</h2>
+          <p class="discount-value">
+            <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
+            <span class="sa">سعودي</span><strong>علي</strong>
+            <strong>الهواتف الذكية</strong>
+          </p>
+          <div class="free-delevry">
+            <p>توصيل مجاني عند أول شراء</p>
+            <p>*تطبق الشروط والأحكام</p>
+          </div>
+          <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
+        </a>
+        <a href="#" class="carousel-item">
+          <h2 class="dont-miss">عروض لا تفوتكم!</h2>
+          <p class="discount-value">
+            <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
+            <span class="sa">سعودي</span><strong>علي</strong>
+            <strong>الهواتف الذكية</strong>
+          </p>
+          <div class="free-delevry">
+            <p>توصيل مجاني عند أول شراء</p>
+            <p>*تطبق الشروط والأحكام</p>
+          </div>
+          <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
+        </a>
+        <a href="#" class="carousel-item">
+          <h2 class="dont-miss">عروض لا تفوتكم!</h2>
+          <p class="discount-value">
+            <span>خصم </span><strong>حتي</strong> <span>300</span>ريال
+            <span class="sa">سعودي</span><strong>علي</strong>
+            <strong>الهواتف الذكية</strong>
+          </p>
+          <div class="free-delevry">
+            <p>توصيل مجاني عند أول شراء</p>
+            <p>*تطبق الشروط والأحكام</p>
+          </div>
+          <img src="../assets/img/banner-1.png" alt="banner" class="banner" />
+        </a>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#home-slider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#home-slider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Shop by Category -->
+    <section class="shop-by">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="title">تسوق حسب الفئة</h3>
+          <a href="#" class="see-all">مشاهدة الكل</a>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <a href="#" class="shop-by-box">
+              <div class="shop-by-img-box">
+                <img
+                  class="shop-img"
+                  src="../assets/img/shop-by-cat-1.png"
+                  alt="smartphone"
+                />
+              </div>
+              <h3 class="category-title">الهواتف الذكية</h3>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <a href="#" class="shop-by-box">
+              <div class="shop-by-img-box">
+                <img
+                  class="shop-img"
+                  src="../assets/img/shop-by-cat-2.png"
+                  alt="tablet"
+                />
+              </div>
+              <h3 class="category-title">الأجهزة اللوحية</h3>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <a href="#" class="shop-by-box">
+              <div class="shop-by-img-box">
+                <img
+                  class="shop-img"
+                  src="../assets/img/shop-by-cat-3.png"
+                  alt="computer"
+                />
+              </div>
+              <h3 class="category-title">الكمبيوتر</h3>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <a href="#" class="shop-by-box">
+              <div class="shop-by-img-box">
+                <img
+                  class="shop-img"
+                  src="../assets/img/shop-by-cat-4.png"
+                  alt="Accessories"
+                />
+              </div>
+              <h3 class="category-title">الإكسسوارات</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Shop by Category -->
+
+    <!-- Start Shop by Brand -->
+    <section class="shop-by">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="title">تسوق حسب العلامة التجارية</h3>
+          <a href="/pages/trademarks.html" class="see-all">مشاهدة الكل</a>
+        </div>
+        <div class="row custom">
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/apple-brand.png"
+                alt="Apple"
+                class="brand-img apple"
+              />
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/samsung-brand.png"
+                alt="samsung"
+                class="brand-img"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/nokia-brand.png"
+                alt="Nokia"
+                class="brand-img"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/oppo-brand.png"
+                alt="Oppo"
+                class="brand-img"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/huawei-brand.png"
+                alt="huawei"
+                class="brand-img"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="brand-box">
+              <img
+                src="../assets/img/honer-brand.png"
+                alt="Honer"
+                class="brand-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Shop by Brand -->
+
+    <!--Start Exclusive Offer -->
+    <div class="container">
+      <section class="exclusive-offer">
+        <div class="save">
+          <div class="save-shape">
+            <p>Save 20%</p>
+          </div>
+          <div class="save-desc">
+            <h3 class="right-offer">الحق العرض</h3>
+            <h4 class="offer-date">العرض ساري حتى 17 مارس</h4>
+            <p class="terms">*تطبق الشروط والأحكام</p>
+          </div>
+        </div>
+        <div class="offer-center">
+          <img
+            class="product-offer"
+            src="../assets/img/mail-watch.png"
+            alt="product-offer"
+          />
+        </div>
+        <div class="offer-left">
+          <div class="product-desc">
+            <p class="desc-offer">ساعة حريمي ديجيتال</p>
+            <span class="new-price">605,28</span>
+            <span class="instead-of"> بدلا من </span>
+            <span class="old-price">805,000</span>
+          </div>
+          <a href="#" class="get-offer">احصل على العرض</a>
+          <p class="terms-mobile">*تطبق الشروط والأحكام</p>
+        </div>
+      </section>
+    </div>
+    <!--End Exclusive Offer -->
+
+    <!-- Start New Arrivals -->
+    <div class="container">
+      <div class="new-arrivals">
+        <div class="section-top">
+          <h3 class="title">وصل حديثًا</h3>
+          <a href="#" class="see-all">مشاهدة الكل</a>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="na-box">
+              <div class="na-box-img">
+                <img
+                  class="na-img"
+                  src="../assets/img/new-arrivals-1.png"
+                  alt="New Arrivals"
+                />
+              </div>
+              <div class="na-desc-box">
+                <a href="#" class="na-desc">
+                  هاتف سامسونج جالاكسي A54 شبكة الجيل الخامس 5G بشريحتين اتصال
+                  وبنظام اندرويد وذاكرة RAM 8 جيجابايت وذاكرة تخزين 256 جيجابايت
+                </a>
+                <div class="na-price-rating">
+                  <span class="price">1.914.85 ريال</span>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" checked />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="na-box">
+              <div class="na-box-img">
+                <img
+                  class="na-img"
+                  src="../assets/img/new-arrivals-2.png"
+                  alt="New Arrivals"
+                />
+              </div>
+              <div class="na-desc-box">
+                <a href="" class="na-desc">
+                  موبايل ابل ايفون 14 برو ماكس الجديد، 256 جيجابايت، ارجواني
+                  غامق
+                </a>
+                <div class="na-price-rating">
+                  <span class="price">6.602.45 ريال </span>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" checked />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="na-box">
+              <div class="na-box-img">
+                <img
+                  class="na-img"
+                  src="../assets/img/new-arrivals-3.png"
+                  alt="New Arrivals"
+                />
+              </div>
+              <div class="na-desc-box">
+                <a href="" class="na-desc">
+                  ايباد ابل الجديد 2021 10.2 بوصة، واي فاي، 64 جيجابايت - فضي
+                  (الجيل التاسع)
+                </a>
+                <div class="na-price-rating">
+                  <span class="price">1.925.00 ريال </span>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" checked />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="na-box">
+              <div class="na-box-img">
+                <img
+                  class="na-img laptop"
+                  src="../assets/img/new-arrivals-4.png"
+                  alt="New Arrivals"
+                />
+              </div>
+              <div class="na-desc-box">
+                <a href="" class="na-desc">
+                  لاب توب ديل فوسترو 3510-انتل كورi5-1135G7 جيل 11، ذاكرة RAM 16
+                  جيجا، هارد HDD 1 تيرا+هارد SSD 256 جيجا.
+                </a>
+                <div class="na-price-rating">
+                  <span class="price">2.809.00 ريال</span>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" checked />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                      <span class="fa fa-star icon"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End New Arrivals -->
+
+    <!-- Start Best Sellers -->
+    <div class="container">
+      <div class="best-sellers">
+        <div class="section-top">
+          <h3 class="title">الأكثر مبيعًا</h3>
+          <a href="#" class="see-all">مشاهدة الكل</a>
+        </div>
+        <div class="main-carousel">
+          <div class="item">
+            <a href="">
+              <div class="item-img-box">
+                <img
+                  src="../assets/img/best-seller-3.png"
+                  alt="best seller item"
+                />
+              </div>
+              <p class="item-desc">
+                ايفون 13 بسعة تخزين 128 جيجابايت، ستارلايت
+              </p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="item-img-box">
+                <img
+                  src="../assets/img/best-seller-2.png"
+                  alt="best seller item"
+                />
+              </div>
+              <p class="item-desc">
+                تابلت اطفال ام تتش ام وان (7 إنش , 8 جيجا بايت)
+              </p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="item-img-box">
+                <img
+                  src="../assets/img/best-seller-1.png"
+                  alt="best seller item"
+                />
+              </div>
+              <p class="item-desc">لاب توب مايكروسوفت سيرفس جو 12.4 بوصة</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Best Sellers -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="shop-with-us">
+          <h3 class="footer-title">تسوق معنا</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">الهواتف الذكية </a></li>
+            <li><a href="#">الاجهزة اللوحية</a></li>
+            <li><a href="#">الكمبيوتر </a></li>
+            <li><a href="#">الاكسسوارات</a></li>
+          </ul>
+        </div>
+        <div class="your-data">
+          <h3 class="footer-title">بياناتك</h3>
+          <ul class="list-unstyled">
+            <li><a href="./your-account.html">حسابك</a></li>
+            <li><a href="./purchases.html">مشترياتك</a></li>
+            <li><a href="./your-addresses.html">عناوينك </a></li>
+            <li><a href="#">قوائمك</a></li>
+          </ul>
+        </div>
+
+        <div class="help-you">
+          <h3 class="footer-title">دعنا نساعدك</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">المساعدة</a></li>
+            <li><a href="#">سياسات وأسعار الشحن</a></li>
+            <li><a href="#">طلبات الارجاع والاستبدال </a></li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3 class="footer-title">دعنا نساعدك</h3>
+          <ul class="list-unstyled">
+            <li><a href="tel:03 111 666 144">03 111 666 144</a></li>
+            <li><a href="tel:03 171 777 015">03 171 777 015</a></li>
+            <li><a href="mailto:info@matager.sa">info@matager.sa</a></li>
+          </ul>
+          <div class="social-media">
+            <ul class="list-unstyled">
+              <li><a class="instagram" href="#"></a></li>
+              <li><a class="twitter" href="#"></a></li>
+              <li><a class="facebook" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="logo-footer-box">
+          <a href="./homepage.html" class="footer-logo">
             <img src="../assets/img/logo.svg" alt="" />
           </a>
-        <p class="footer-desc">متاجر توفر لك تجربة تسوق مميزة وآمنة. بين مجموعة واسعة من المنتجات الإلكترونية بأسعار تنافسية وجودة عالية.</p>
+          <p class="footer-desc">
+            متاجر توفر لك تجربة تسوق مميزة وآمنة. بين مجموعة واسعة من المنتجات
+            الإلكترونية بأسعار تنافسية وجودة عالية.
+          </p>
+        </div>
       </div>
+      <div class="footer-rights">
+        <p>جميع الحقوق محفوظة لدى</p>
+        <a href="#"
+          ><img class="rights-logo" src="../assets/img/logo.svg" alt="logo"
+        /></a>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-    </div>
-  <div class="footer-rights">
-    <p>جميع الحقوق محفوظة لدى</p>
-    <a href="#"><img class="rights-logo" src="../assets/img/logo.svg" alt="logo"></a>
-  </div>
-  </footer>
-  <!-- End Footer -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Best Seller Slider -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../js/bestSellerSlider.js"></script>
+    <!--Bootstrap  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-  <!-- Best Seller Slider -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="../js/bestSellerSlider.js">
-
-  </script>
-  <!--Bootstrap  -->
-  <script src="../js/bootstrap.bundle.min.js"></script>
-
-  <!-- javascript file -->
-  <script src="../js/script.js"></script>
-
-
-</body>
-
+    <!-- javascript file -->
+    <script src="../js/script.js"></script>
+  </body>
 </html>

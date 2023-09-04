@@ -75,6 +75,25 @@ allCategoryLinks.forEach((link) => {
   });
 });
 
+// Open Accordion on Hover
+let dropdownMenus = document.querySelectorAll(
+  ".dropdown-menu .accordion-header"
+);
+let accordionButton = document.querySelectorAll(".accordion-button");
+dropdownMenus.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation();
+    
+  })
+})
+accordionButton.forEach((accordion) => {
+  accordion.addEventListener("mouseover", (e) => {
+
+    // accordion.click()
+   
+  })
+})
+
 // Product page
 // Change Product Photo
 let smallPhotos = document.querySelectorAll(".small-photos img");
@@ -172,7 +191,7 @@ window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     addNewAddressModel.forEach((model) => {
       model.classList.remove("show");
-      overLay.classList.remove("show");
+      overLay.classList.remove("open");
     });
   }
 });
