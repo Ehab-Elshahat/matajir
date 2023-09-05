@@ -247,3 +247,21 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+// Results Page Favorites Add To Cart
+let favoritesIcons = document.querySelectorAll(
+  ".results .result-box .favorite"
+);
+favoritesIcons.forEach((icon) => {
+  icon.addEventListener("click", () =>{
+    icon.classList.toggle("active")
+  })
+});
+let addToCartIcons = document.querySelectorAll(
+  ".results .result-box .add-item-to-cart"
+);
+addToCartIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    icon.classList.toggle("active");
+  });
+});
