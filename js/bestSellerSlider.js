@@ -2,7 +2,7 @@
 
 $(".main-carousel").flickity({
   // options
-  cellAlign: "center",
+  cellAlign: "right",
   fade: true,
   wrapAround: true,
   freeScroll: true,
@@ -11,4 +11,5 @@ $(".main-carousel").flickity({
   autoPlay: 3000,
   selectedAttraction: 0.3,
   friction: 0.8,
+ 
 });

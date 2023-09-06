@@ -64,35 +64,7 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Handle Active Class On Category Links
-let allCategoryLinks = document.querySelectorAll(
-  ".category li .dropdown-toggle "
-);
-allCategoryLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    allCategoryLinks.forEach((el) => el.classList.remove("active"));
-    link.classList.add("active");
-  });
-});
 
-// Open Accordion on Hover
-let dropdownMenus = document.querySelectorAll(
-  ".dropdown-menu .accordion-header"
-);
-let accordionButton = document.querySelectorAll(".accordion-button");
-dropdownMenus.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation();
-    
-  })
-})
-accordionButton.forEach((accordion) => {
-  accordion.addEventListener("mouseover", (e) => {
-
-    // accordion.click()
-   
-  })
-})
 
 // Product page
 // Change Product Photo
