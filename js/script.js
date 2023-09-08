@@ -238,4 +238,35 @@ addToCartIcons.forEach((icon) => {
   });
 });
 
-// Scroll X position
+// Handel column row show Result page mobile
+let contentViewBtn = document.querySelector(".content-view");
+let colBoxes = document.querySelectorAll(".results .row .col-lg-3"); 
+let resultBoxes = document.querySelectorAll(".results .result-box");
+contentViewBtn.addEventListener("click", ()=>{
+  contentViewBtn.classList.toggle("grid")
+
+  console.log(contentViewBtn.classList.contains("grid"));
+  if (contentViewBtn.classList.contains("grid")) {
+    colBoxes.forEach((item) => {
+      item.classList.remove("col-sm-6");
+      item.classList.add("col-6");
+       resultBoxes.forEach((item) => {
+         item.classList.remove("column");
+       });
+    });
+    
+  } else {
+     colBoxes.forEach((item) => {
+       item.classList.add("col-sm-6");
+       item.classList.remove("col-6");
+       resultBoxes.forEach((item) => {
+         item.classList.add("column");
+       });
+     });
+    
+  }
+
+  
+
+ 
+})
