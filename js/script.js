@@ -237,3 +237,5 @@ addToCartIcons.forEach((icon) => {
     icon.classList.toggle("active");
   });
 });
+
+// Scroll X position

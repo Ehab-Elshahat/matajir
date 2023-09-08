@@ -1650,7 +1650,7 @@ overflow: hidden;
  
 }
 
-.new-arrivals .na-box:hover .na-box-img img {
+.new-arrivals  .na-box-img:hover img {
   transform: scale(1.08);
   -webkit-transform: scale(1.08);
   -moz-transform: scale(1.08);
@@ -1666,6 +1666,8 @@ overflow: hidden;
 
 
 .na-box .na-box-img {
+  text-decoration: none;
+  display: block;
   text-align: center;
   height: 300px;
   padding: 20px 0;
@@ -1878,9 +1880,15 @@ footer {
   padding: 50px 0 0;
 }
 
-footer .container {
+footer  .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .container.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -1991,7 +1999,7 @@ footer .social-media ul li a {
   margin-left: 10px;
   background-size: 25px;
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
+  background-position: center;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -2005,6 +2013,8 @@ footer .social-media ul li a.instagram {
 
 footer .social-media ul li a.instagram:hover {
   background-image: url("../assets/img/instagram-hover.png");
+
+    
 }
 
 footer .social-media ul li a.twitter {
@@ -2013,6 +2023,7 @@ footer .social-media ul li a.twitter {
 
 footer .social-media ul li a.twitter:hover {
   background-image: url("../assets/img/twitter-hover.png");
+  
 }
 
 footer .social-media ul li a.facebook {
@@ -2021,6 +2032,7 @@ footer .social-media ul li a.facebook {
 
 footer .social-media ul li a.facebook:hover {
   background-image: url("../assets/img/facebook-hover.png");
+
 }
 
 footer .footer-logo {
@@ -2040,7 +2052,7 @@ footer .footer-desc {
 }
 
 .footer-rights {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2713,14 +2725,19 @@ footer .footer-desc {
 
 .users-see-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .users-see-container .user-see-box {
   margin: 0 10px;
+  flex: 1;
+  max-width: 300px;
 }
 
 .user-see-box .img-box {
+  display: block;
+  text-decoration: none;
   padding: 25px 15px;
   text-align: center;
   border-radius: 15px;
@@ -2729,7 +2746,16 @@ footer .footer-desc {
 }
 
 .user-see-box .img-box img {
-  max-width: 100%;
+  width: 160px;
+  height: 160px;
+}
+.user-see-box .img-box img:hover {
+  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+
 }
 
 .users-see-container .user-see-box .users-see-desc {
@@ -2741,11 +2767,7 @@ footer .footer-desc {
   font-style: normal;
   font-weight: 400;
   margin: 5px;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  
 }
 
 .users-see-container .user-see-box .users-see-desc:hover {
@@ -2754,12 +2776,24 @@ footer .footer-desc {
 
 @media (max-width: 1200px) {
   .users-see-container {
-    overflow-x: auto;
-  }
+    flex-wrap: wrap;
 
+  }
+  
   .users-see-container .user-see-box {
     margin: 20px 10px;
     min-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+    .users-see-container  {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      align-items: flex-start;
+    }
+    .users-see-container::-webkit-scrollbar {
+    background-color: transparent;
   }
 }
 
@@ -3211,11 +3245,6 @@ footer .footer-desc {
   justify-content: space-between;
   height: 520px;
   margin-bottom: 20px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
 }
 .results .result-box .favorite {
   position: absolute;
@@ -3257,7 +3286,8 @@ footer .footer-desc {
 }
 
 .results .result-box .result-img img {
-  max-width: 100%;
+  width: 200px;
+  height: 220px;
 }
 
 .results .result-box .result-desc {
@@ -3268,11 +3298,6 @@ footer .footer-desc {
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
 }
 
 .results .result-box .result-desc:hover {
@@ -3302,6 +3327,7 @@ footer .footer-desc {
 }
 
 .results-banner {
+  text-decoration: none;
   display: flex;
   margin-bottom: 40px;
   position: relative;
@@ -4740,9 +4766,7 @@ background-image: url("../assets/img/add-result.png");
   overflow: hidden;
 }
 
-.filter .btns label:hover {
-  background-color: #ffe16a;
-}
+
 
 .filter .btns label .text {
   position: relative;
@@ -5309,6 +5333,7 @@ input[type="range"]::-moz-range-thumb {
 
 .purchases-left {
   margin: 24px 80px;
+  overflow: hidden;
 }
 @media(max-width:1200px) {
   .purchases-left {
@@ -5372,8 +5397,11 @@ input[type="range"]::-moz-range-thumb {
    margin-bottom: 16px;
   }
 }
+/* ==== */
 .purchases-items-box {
   display: flex;
+
+
   background: #f5f5f580;
   padding: 20px 10px;
   border: 0.2px solid #a6a6a6;
@@ -5386,16 +5414,26 @@ input[type="range"]::-moz-range-thumb {
 }
 @media(max-width:1200px) {
   .purchases-items-box {
-    overflow: auto;
-    max-width: 100%;
+    flex-wrap: wrap;
     border: none;
     margin-top: 0;
+    gap: 30px;
+  }
+}
+@media(max-width:500px) {
+  .purchases-items-box {
+    flex-wrap: nowrap;
+   overflow-x: auto;
+  }
+  .purchases-items-box::-webkit-scrollbar{
+    background-color: transparent;
   }
 }
 .purchases-items-box .purchases-number-date {
   position: relative;
   margin-left: 40px;
   padding: 30px 0;
+  min-width: 100px
 }
 
 .purchases-items-box .purchases-number-date::before {
@@ -5434,7 +5472,6 @@ input[type="range"]::-moz-range-thumb {
 .purchases-items-box .item-box {
   display: flex;
   justify-content: space-between;
-  width: 250px;
 }
 .purchases-items-box .item-box .item-img-done {
   width: 120px;
@@ -5490,6 +5527,7 @@ input[type="range"]::-moz-range-thumb {
   justify-content: space-between;
   align-items: flex-end;
   margin-right: auto;
+  flex: 1;
 }
 @media(max-width:1200px) {
   .purchases-items-box .purchases-number-date,
