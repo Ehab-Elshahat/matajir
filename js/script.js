@@ -225,7 +225,8 @@ let favoritesIcons = document.querySelectorAll(
   ".results .result-box .favorite"
 );
 favoritesIcons.forEach((icon) => {
-  icon.addEventListener("click", () =>{
+  icon.addEventListener("click", (e) =>{
+    e.preventDefault();
     icon.classList.toggle("active")
   })
 });
