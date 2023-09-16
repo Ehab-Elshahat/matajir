@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="twitterx">
+<g id="Group 332">
+<path id="Vector" d="M19 21H5C3.8955 21 3 20.1045 3 19V5C3 3.8955 3.8955 3 5 3H19C20.1045 3 21 3.8955 21 5V19C21 20.1045 20.1045 21 19 21Z" fill="url(#paint0_linear_925_6671)"/>
+<path id="Vector_2" d="M17.1285 17H13.91L6.91449 7H10.133L17.1285 17ZM14.2935 16.152H15.575L9.74949 7.848H8.46799L14.2935 16.152Z" fill="white"/>
+<path id="Vector_3" d="M7.933 17.0001L11.5345 12.8281L11.0635 12.2036L6.9115 17.0001H7.933Z" fill="white"/>
+<path id="Vector_4" d="M12.225 10.8605L12.6775 11.505L16.568 7H15.568L12.225 10.8605Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_925_6671" x1="2.169" y1="-5.028" x2="19.492" y2="24.977" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4B4B4B"/>
+<stop offset="0.247" stop-color="#3E3E3E"/>
+<stop offset="0.686" stop-color="#2B2B2B"/>
+<stop offset="1" stop-color="#252525"/>
+</linearGradient>
+</defs>
+</svg>
